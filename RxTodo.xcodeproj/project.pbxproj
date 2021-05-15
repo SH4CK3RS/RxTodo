@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1738F0CC05EF07AD6D67B709 /* Pods_RxTodo_RxTodoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9207B720619D644D8D1AF5 /* Pods_RxTodo_RxTodoTests.framework */; };
 		9510EC5B4E61FFDA3BDB30FD /* Pods_RxTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB28E7A97F6FF1A08FE8008A /* Pods_RxTodo.framework */; };
 		AACCADD6264FB9C3005C9FBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCADD5264FB9C3005C9FBC /* AppDelegate.swift */; };
 		AACCADDA264FB9C3005C9FBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCADD9264FB9C3005C9FBC /* ViewController.swift */; };
-		AACCADDF264FB9C4005C9FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACCADDE264FB9C4005C9FBC /* Assets.xcassets */; };
 		AACCADE2264FB9C4005C9FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AACCADE0264FB9C4005C9FBC /* LaunchScreen.storyboard */; };
 		AACCAE17264FBD28005C9FBC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCAE16264FBD28005C9FBC /* main.swift */; };
-		AACCAE26264FBFE7005C9FBC /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCAE25264FBFE7005C9FBC /* MockError.swift */; };
+		AACCAE92264FC30B005C9FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACCADDE264FB9C4005C9FBC /* Assets.xcassets */; };
+		AACCAFFC264FC9F2005C9FBC /* RxTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCAFFB264FC9F2005C9FBC /* RxTodoTests.swift */; };
+		AACCB010264FCA91005C9FBC /* MockServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB00F264FCA91005C9FBC /* MockServiceProvider.swift */; };
+		AACCB017264FCADD005C9FBC /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB016264FCADD005C9FBC /* ServiceProvider.swift */; };
+		AACCB01D264FEF96005C9FBC /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB01C264FEF96005C9FBC /* UserDefaultsService.swift */; };
+		AACCB022264FEFC7005C9FBC /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB021264FEFC7005C9FBC /* UserDefaultKey.swift */; };
+		AACCB028264FF4FB005C9FBC /* MockUserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB027264FF4FB005C9FBC /* MockUserDefaultsService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AACCAE0A264FBC3B005C9FBC /* PBXContainerItemProxy */ = {
+		AACCAFFE264FC9F2005C9FBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AACCADCA264FB9C3005C9FBC /* Project object */;
 			proxyType = 1;
@@ -38,10 +42,15 @@
 		AACCADDE264FB9C4005C9FBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AACCADE1264FB9C4005C9FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AACCADE3264FB9C4005C9FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AACCAE05264FBC3B005C9FBC /* RxTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AACCAE09264FBC3B005C9FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACCAE16264FBD28005C9FBC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		AACCAE25264FBFE7005C9FBC /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		AACCAFF9264FC9F2005C9FBC /* RxTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACCAFFB264FC9F2005C9FBC /* RxTodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTodoTests.swift; sourceTree = "<group>"; };
+		AACCAFFD264FC9F2005C9FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AACCB00F264FCA91005C9FBC /* MockServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServiceProvider.swift; sourceTree = "<group>"; };
+		AACCB016264FCADD005C9FBC /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		AACCB01C264FEF96005C9FBC /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
+		AACCB021264FEFC7005C9FBC /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
+		AACCB027264FF4FB005C9FBC /* MockUserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefaultsService.swift; sourceTree = "<group>"; };
 		C1C33FB4623A3D345CCD575C /* Pods-RxTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTodo.release.xcconfig"; path = "Target Support Files/Pods-RxTodo/Pods-RxTodo.release.xcconfig"; sourceTree = "<group>"; };
 		FB28E7A97F6FF1A08FE8008A /* Pods_RxTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -55,11 +64,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AACCAE02264FBC3B005C9FBC /* Frameworks */ = {
+		AACCAFF6264FC9F2005C9FBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1738F0CC05EF07AD6D67B709 /* Pods_RxTodo_RxTodoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				AACCADD4264FB9C3005C9FBC /* RxTodo */,
-				AACCAE06264FBC3B005C9FBC /* RxTodoTests */,
+				AACCAFFA264FC9F2005C9FBC /* RxTodoTests */,
 				AACCADD3264FB9C3005C9FBC /* Products */,
 				5070EA3DB13FA0A751DF4026 /* Pods */,
 				2E6C0824510CC65B0E059A44 /* Frameworks */,
@@ -101,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				AACCADD2264FB9C3005C9FBC /* RxTodo.app */,
-				AACCAE05264FBC3B005C9FBC /* RxTodoTests.xctest */,
+				AACCAFF9264FC9F2005C9FBC /* RxTodoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -116,18 +124,11 @@
 			path = RxTodo;
 			sourceTree = "<group>";
 		};
-		AACCAE06264FBC3B005C9FBC /* RxTodoTests */ = {
-			isa = PBXGroup;
-			children = (
-				AACCAE22264FBFB5005C9FBC /* SupportingFiles */,
-				AACCAE1C264FBF87005C9FBC /* Sources */,
-			);
-			path = RxTodoTests;
-			sourceTree = "<group>";
-		};
 		AACCAE13264FBCD2005C9FBC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				AACCB020264FEFBC005C9FBC /* Types */,
+				AACCB015264FCAD3005C9FBC /* Services */,
 				AACCADD5264FB9C3005C9FBC /* AppDelegate.swift */,
 				AACCADD9264FB9C3005C9FBC /* ViewController.swift */,
 				AACCAE16264FBD28005C9FBC /* main.swift */,
@@ -152,36 +153,64 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		AACCAE1C264FBF87005C9FBC /* Sources */ = {
+		AACCAFFA264FC9F2005C9FBC /* RxTodoTests */ = {
 			isa = PBXGroup;
 			children = (
-				AACCAE23264FBFCF005C9FBC /* Mock */,
-				AACCAE1D264FBF8F005C9FBC /* Tests */,
+				AACCB00C264FCA74005C9FBC /* Sources */,
+				AACCB005264FCA1A005C9FBC /* Supporting Files */,
+				AACCAFFB264FC9F2005C9FBC /* RxTodoTests.swift */,
+			);
+			path = RxTodoTests;
+			sourceTree = "<group>";
+		};
+		AACCB005264FCA1A005C9FBC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AACCAFFD264FC9F2005C9FBC /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AACCB00C264FCA74005C9FBC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AACCB00D264FCA80005C9FBC /* Mock */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		AACCAE1D264FBF8F005C9FBC /* Tests */ = {
+		AACCB00D264FCA80005C9FBC /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		AACCAE22264FBFB5005C9FBC /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				AACCAE09264FBC3B005C9FBC /* Info.plist */,
-			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		AACCAE23264FBFCF005C9FBC /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-				AACCAE25264FBFE7005C9FBC /* MockError.swift */,
+				AACCB00E264FCA87005C9FBC /* Services */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		AACCB00E264FCA87005C9FBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AACCB00F264FCA91005C9FBC /* MockServiceProvider.swift */,
+				AACCB027264FF4FB005C9FBC /* MockUserDefaultsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AACCB015264FCAD3005C9FBC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AACCB016264FCADD005C9FBC /* ServiceProvider.swift */,
+				AACCB01C264FEF96005C9FBC /* UserDefaultsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AACCB020264FEFBC005C9FBC /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				AACCB021264FEFC7005C9FBC /* UserDefaultKey.swift */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,24 +235,22 @@
 			productReference = AACCADD2264FB9C3005C9FBC /* RxTodo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AACCAE04264FBC3B005C9FBC /* RxTodoTests */ = {
+		AACCAFF8264FC9F2005C9FBC /* RxTodoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AACCAE0C264FBC3B005C9FBC /* Build configuration list for PBXNativeTarget "RxTodoTests" */;
+			buildConfigurationList = AACCB000264FC9F2005C9FBC /* Build configuration list for PBXNativeTarget "RxTodoTests" */;
 			buildPhases = (
-				F1EC4AF38BAA9035EC493210 /* [CP] Check Pods Manifest.lock */,
-				AACCAE01264FBC3B005C9FBC /* Sources */,
-				AACCAE02264FBC3B005C9FBC /* Frameworks */,
-				AACCAE03264FBC3B005C9FBC /* Resources */,
-				D1180108BE56F2E048B01576 /* [CP] Embed Pods Frameworks */,
+				AACCAFF5264FC9F2005C9FBC /* Sources */,
+				AACCAFF6264FC9F2005C9FBC /* Frameworks */,
+				AACCAFF7264FC9F2005C9FBC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AACCAE0B264FBC3B005C9FBC /* PBXTargetDependency */,
+				AACCAFFF264FC9F2005C9FBC /* PBXTargetDependency */,
 			);
 			name = RxTodoTests;
 			productName = RxTodoTests;
-			productReference = AACCAE05264FBC3B005C9FBC /* RxTodoTests.xctest */;
+			productReference = AACCAFF9264FC9F2005C9FBC /* RxTodoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -238,9 +265,8 @@
 					AACCADD1264FB9C3005C9FBC = {
 						CreatedOnToolsVersion = 12.3;
 					};
-					AACCAE04264FBC3B005C9FBC = {
+					AACCAFF8264FC9F2005C9FBC = {
 						CreatedOnToolsVersion = 12.3;
-						LastSwiftMigration = 1230;
 						TestTargetID = AACCADD1264FB9C3005C9FBC;
 					};
 				};
@@ -259,7 +285,7 @@
 			projectRoot = "";
 			targets = (
 				AACCADD1264FB9C3005C9FBC /* RxTodo */,
-				AACCAE04264FBC3B005C9FBC /* RxTodoTests */,
+				AACCAFF8264FC9F2005C9FBC /* RxTodoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -270,11 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AACCADE2264FB9C4005C9FBC /* LaunchScreen.storyboard in Resources */,
-				AACCADDF264FB9C4005C9FBC /* Assets.xcassets in Resources */,
+				AACCAE92264FC30B005C9FBC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AACCAE03264FBC3B005C9FBC /* Resources */ = {
+		AACCAFF7264FC9F2005C9FBC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,45 +349,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxTodo/Pods-RxTodo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D1180108BE56F2E048B01576 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxTodo-RxTodoTests/Pods-RxTodo-RxTodoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxTodo-RxTodoTests/Pods-RxTodo-RxTodoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxTodo-RxTodoTests/Pods-RxTodo-RxTodoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F1EC4AF38BAA9035EC493210 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxTodo-RxTodoTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -369,27 +356,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACCB017264FCADD005C9FBC /* ServiceProvider.swift in Sources */,
 				AACCADDA264FB9C3005C9FBC /* ViewController.swift in Sources */,
+				AACCB01D264FEF96005C9FBC /* UserDefaultsService.swift in Sources */,
 				AACCADD6264FB9C3005C9FBC /* AppDelegate.swift in Sources */,
+				AACCB022264FEFC7005C9FBC /* UserDefaultKey.swift in Sources */,
 				AACCAE17264FBD28005C9FBC /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AACCAE01264FBC3B005C9FBC /* Sources */ = {
+		AACCAFF5264FC9F2005C9FBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AACCAE26264FBFE7005C9FBC /* MockError.swift in Sources */,
+				AACCB010264FCA91005C9FBC /* MockServiceProvider.swift in Sources */,
+				AACCAFFC264FC9F2005C9FBC /* RxTodoTests.swift in Sources */,
+				AACCB028264FF4FB005C9FBC /* MockUserDefaultsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AACCAE0B264FBC3B005C9FBC /* PBXTargetDependency */ = {
+		AACCAFFF264FC9F2005C9FBC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AACCADD1264FB9C3005C9FBC /* RxTodo */;
-			targetProxy = AACCAE0A264FBC3B005C9FBC /* PBXContainerItemProxy */;
+			targetProxy = AACCAFFE264FC9F2005C9FBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -456,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -511,7 +503,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -529,7 +521,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97C96KP84G;
-				INFOPLIST_FILE = RxTodo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RxTodo/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,7 +529,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.byeonggeun.son.practice.RxTodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -549,7 +541,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97C96KP84G;
-				INFOPLIST_FILE = RxTodo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RxTodo/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,19 +549,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.byeonggeun.son.practice.RxTodo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		AACCAE0D264FBC3B005C9FBC /* Debug */ = {
+		AACCB001264FC9F2005C9FBC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16E928EF7285D98B01A4251F /* Pods-RxTodo-RxTodoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97C96KP84G;
-				INFOPLIST_FILE = RxTodoTests/Info.plist;
+				INFOPLIST_FILE = "RxTodoTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -577,23 +568,20 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.byeonggeun.son.practice.RxTodoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RxTodoTests/Sources/Mock/RxTodoTests-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxTodo.app/RxTodo";
 			};
 			name = Debug;
 		};
-		AACCAE0E264FBC3B005C9FBC /* Release */ = {
+		AACCB002264FC9F2005C9FBC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7D45E5DB34DFC10357E72CE /* Pods-RxTodo-RxTodoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97C96KP84G;
-				INFOPLIST_FILE = RxTodoTests/Info.plist;
+				INFOPLIST_FILE = "RxTodoTests/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -601,7 +589,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.byeonggeun.son.practice.RxTodoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "RxTodoTests/Sources/Mock/RxTodoTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxTodo.app/RxTodo";
@@ -629,11 +616,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AACCAE0C264FBC3B005C9FBC /* Build configuration list for PBXNativeTarget "RxTodoTests" */ = {
+		AACCB000264FC9F2005C9FBC /* Build configuration list for PBXNativeTarget "RxTodoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AACCAE0D264FBC3B005C9FBC /* Debug */,
-				AACCAE0E264FBC3B005C9FBC /* Release */,
+				AACCB001264FC9F2005C9FBC /* Debug */,
+				AACCB002264FC9F2005C9FBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
