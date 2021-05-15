@@ -13,8 +13,8 @@
 		AACCADDA264FB9C3005C9FBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCADD9264FB9C3005C9FBC /* ViewController.swift */; };
 		AACCADDF264FB9C4005C9FBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACCADDE264FB9C4005C9FBC /* Assets.xcassets */; };
 		AACCADE2264FB9C4005C9FBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AACCADE0264FB9C4005C9FBC /* LaunchScreen.storyboard */; };
-		AACCAE08264FBC3B005C9FBC /* RxTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCAE07264FBC3B005C9FBC /* RxTodoTests.swift */; };
 		AACCAE17264FBD28005C9FBC /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCAE16264FBD28005C9FBC /* main.swift */; };
+		AACCAE26264FBFE7005C9FBC /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCAE25264FBFE7005C9FBC /* MockError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +39,9 @@
 		AACCADE1264FB9C4005C9FBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AACCADE3264FB9C4005C9FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACCAE05264FBC3B005C9FBC /* RxTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AACCAE07264FBC3B005C9FBC /* RxTodoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTodoTests.swift; sourceTree = "<group>"; };
 		AACCAE09264FBC3B005C9FBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AACCAE16264FBD28005C9FBC /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AACCAE25264FBFE7005C9FBC /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
 		C1C33FB4623A3D345CCD575C /* Pods-RxTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTodo.release.xcconfig"; path = "Target Support Files/Pods-RxTodo/Pods-RxTodo.release.xcconfig"; sourceTree = "<group>"; };
 		FB28E7A97F6FF1A08FE8008A /* Pods_RxTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,8 +119,8 @@
 		AACCAE06264FBC3B005C9FBC /* RxTodoTests */ = {
 			isa = PBXGroup;
 			children = (
-				AACCAE07264FBC3B005C9FBC /* RxTodoTests.swift */,
-				AACCAE09264FBC3B005C9FBC /* Info.plist */,
+				AACCAE22264FBFB5005C9FBC /* SupportingFiles */,
+				AACCAE1C264FBF87005C9FBC /* Sources */,
 			);
 			path = RxTodoTests;
 			sourceTree = "<group>";
@@ -150,6 +150,38 @@
 				AACCADE0264FB9C4005C9FBC /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AACCAE1C264FBF87005C9FBC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AACCAE23264FBFCF005C9FBC /* Mock */,
+				AACCAE1D264FBF8F005C9FBC /* Tests */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		AACCAE1D264FBF8F005C9FBC /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		AACCAE22264FBFB5005C9FBC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AACCAE09264FBC3B005C9FBC /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AACCAE23264FBFCF005C9FBC /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				AACCAE25264FBFE7005C9FBC /* MockError.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +240,7 @@
 					};
 					AACCAE04264FBC3B005C9FBC = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 						TestTargetID = AACCADD1264FB9C3005C9FBC;
 					};
 				};
@@ -346,7 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AACCAE08264FBC3B005C9FBC /* RxTodoTests.swift in Sources */,
+				AACCAE26264FBFE7005C9FBC /* MockError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +566,7 @@
 			baseConfigurationReference = 16E928EF7285D98B01A4251F /* Pods-RxTodo-RxTodoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97C96KP84G;
 				INFOPLIST_FILE = RxTodoTests/Info.plist;
@@ -543,6 +577,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.byeonggeun.son.practice.RxTodoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxTodoTests/Sources/Mock/RxTodoTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxTodo.app/RxTodo";
@@ -554,6 +590,7 @@
 			baseConfigurationReference = A7D45E5DB34DFC10357E72CE /* Pods-RxTodo-RxTodoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97C96KP84G;
 				INFOPLIST_FILE = RxTodoTests/Info.plist;
@@ -564,6 +601,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.byeonggeun.son.practice.RxTodoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RxTodoTests/Sources/Mock/RxTodoTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxTodo.app/RxTodo";
