@@ -9,4 +9,5 @@
 
 final class MockServiceProvider: ServiceProviderType {
   lazy var userDefaultsService: UserDefaultServiceType = MockUserDefaultsService()
+  lazy var alertService: AlertServiceType = MockAlertService(provider: self)
 }

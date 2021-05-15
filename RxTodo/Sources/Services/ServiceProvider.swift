@@ -7,4 +7,5 @@
 
 protocol ServiceProviderType: class {
   var userDefaultsService: UserDefaultServiceType { get }
+  var alertService: AlertServiceType { get }
 }

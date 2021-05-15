@@ -19,6 +19,9 @@
 		AACCB01D264FEF96005C9FBC /* UserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB01C264FEF96005C9FBC /* UserDefaultsService.swift */; };
 		AACCB022264FEFC7005C9FBC /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB021264FEFC7005C9FBC /* UserDefaultKey.swift */; };
 		AACCB028264FF4FB005C9FBC /* MockUserDefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB027264FF4FB005C9FBC /* MockUserDefaultsService.swift */; };
+		AACCB02C264FF6C6005C9FBC /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB02B264FF6C6005C9FBC /* AlertService.swift */; };
+		AACCB038264FF8E3005C9FBC /* MockAlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB037264FF8E3005C9FBC /* MockAlertService.swift */; };
+		AACCB03C264FF93E005C9FBC /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB03B264FF93E005C9FBC /* BaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		AACCB01C264FEF96005C9FBC /* UserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsService.swift; sourceTree = "<group>"; };
 		AACCB021264FEFC7005C9FBC /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
 		AACCB027264FF4FB005C9FBC /* MockUserDefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefaultsService.swift; sourceTree = "<group>"; };
+		AACCB02B264FF6C6005C9FBC /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		AACCB037264FF8E3005C9FBC /* MockAlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAlertService.swift; sourceTree = "<group>"; };
+		AACCB03B264FF93E005C9FBC /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		C1C33FB4623A3D345CCD575C /* Pods-RxTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTodo.release.xcconfig"; path = "Target Support Files/Pods-RxTodo/Pods-RxTodo.release.xcconfig"; sourceTree = "<group>"; };
 		FB28E7A97F6FF1A08FE8008A /* Pods_RxTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -192,6 +198,7 @@
 			children = (
 				AACCB00F264FCA91005C9FBC /* MockServiceProvider.swift */,
 				AACCB027264FF4FB005C9FBC /* MockUserDefaultsService.swift */,
+				AACCB037264FF8E3005C9FBC /* MockAlertService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -201,6 +208,8 @@
 			children = (
 				AACCB016264FCADD005C9FBC /* ServiceProvider.swift */,
 				AACCB01C264FEF96005C9FBC /* UserDefaultsService.swift */,
+				AACCB02B264FF6C6005C9FBC /* AlertService.swift */,
+				AACCB03B264FF93E005C9FBC /* BaseService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -356,8 +365,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACCB03C264FF93E005C9FBC /* BaseService.swift in Sources */,
 				AACCB017264FCADD005C9FBC /* ServiceProvider.swift in Sources */,
 				AACCADDA264FB9C3005C9FBC /* ViewController.swift in Sources */,
+				AACCB02C264FF6C6005C9FBC /* AlertService.swift in Sources */,
 				AACCB01D264FEF96005C9FBC /* UserDefaultsService.swift in Sources */,
 				AACCADD6264FB9C3005C9FBC /* AppDelegate.swift in Sources */,
 				AACCB022264FEFC7005C9FBC /* UserDefaultKey.swift in Sources */,
@@ -369,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACCB038264FF8E3005C9FBC /* MockAlertService.swift in Sources */,
 				AACCB010264FCA91005C9FBC /* MockServiceProvider.swift in Sources */,
 				AACCAFFC264FC9F2005C9FBC /* RxTodoTests.swift in Sources */,
 				AACCB028264FF4FB005C9FBC /* MockUserDefaultsService.swift in Sources */,
