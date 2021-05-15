@@ -1,0 +1,95 @@
+PODS:
+  - CGFloatLiteral (0.5.0)
+  - Differentiator (5.0.0)
+  - ManualLayout (1.3.0)
+  - ReactorKit (3.0.0):
+    - RxSwift (~> 6.0)
+    - WeakMapTable (~> 1.1)
+  - ReusableKit (3.0.0):
+    - ReusableKit/Core (= 3.0.0)
+  - ReusableKit/Core (3.0.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxExpect (1.2.0):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+    - RxTest (>= 4.0.0)
+  - RxOptional (5.0.2):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - RxTest (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxViewController (2.0.0):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - SnapKit (5.0.1)
+  - Then (2.7.0)
+  - URLNavigator (2.3.0)
+  - WeakMapTable (1.2.0)
+
+DEPENDENCIES:
+  - CGFloatLiteral
+  - ManualLayout
+  - ReactorKit
+  - ReusableKit
+  - RxCocoa
+  - RxDataSources
+  - RxExpect
+  - RxOptional
+  - RxSwift
+  - RxTest
+  - RxViewController
+  - SnapKit
+  - Then
+  - URLNavigator
+
+SPEC REPOS:
+  trunk:
+    - CGFloatLiteral
+    - Differentiator
+    - ManualLayout
+    - ReactorKit
+    - ReusableKit
+    - RxCocoa
+    - RxDataSources
+    - RxExpect
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - RxTest
+    - RxViewController
+    - SnapKit
+    - Then
+    - URLNavigator
+    - WeakMapTable
+
+SPEC CHECKSUMS:
+  CGFloatLiteral: 0328648f666e3cb2263d5ee3972df9d320786d25
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  ManualLayout: 68ac8cfa6b5f656f7a9fadec3730208b95986880
+  ReactorKit: 5348c9881dcb546605b451e32759dccc9937d36e
+  ReusableKit: e5f853ad4652e411f96b6119b2488afa12929be6
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxExpect: 9982ae7345b0083472f3b2492cdbc09525747d64
+  RxOptional: 3664964c96b69dd20c9cf78bdfe546615e26eca8
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  RxTest: 9d26616eaff4a7e75f4ecae9b2c24840f2e8218d
+  RxViewController: 56486fa0afd629a1d6b5ba077f3b8cd9dc31b5d2
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+  URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
+  WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
+
+PODFILE CHECKSUM: 60c2ada3a9aef46e0b923b2ca4492d92285becd0
+
+COCOAPODS: 1.10.1
