@@ -25,6 +25,7 @@
 		AACCB040264FFD37005C9FBC /* TaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB03F264FFD37005C9FBC /* TaskService.swift */; };
 		AACCB045264FFDAA005C9FBC /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB044264FFDAA005C9FBC /* ModelType.swift */; };
 		AACCB04B264FFF3A005C9FBC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB04A264FFF3A005C9FBC /* Task.swift */; };
+		AACCB06226512473005C9FBC /* Array+SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACCB06126512473005C9FBC /* Array+SectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		AACCB03F264FFD37005C9FBC /* TaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskService.swift; sourceTree = "<group>"; };
 		AACCB044264FFDAA005C9FBC /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
 		AACCB04A264FFF3A005C9FBC /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		AACCB06126512473005C9FBC /* Array+SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+SectionModel.swift"; sourceTree = "<group>"; };
 		C1C33FB4623A3D345CCD575C /* Pods-RxTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTodo.release.xcconfig"; path = "Target Support Files/Pods-RxTodo/Pods-RxTodo.release.xcconfig"; sourceTree = "<group>"; };
 		FB28E7A97F6FF1A08FE8008A /* Pods_RxTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -143,6 +145,7 @@
 				AACCB015264FCAD3005C9FBC /* Services */,
 				AACCB043264FFD99005C9FBC /* Models */,
 				AACCADD5264FB9C3005C9FBC /* AppDelegate.swift */,
+				AACCB06026512462005C9FBC /* Utils */,
 				AACCADD9264FB9C3005C9FBC /* ViewController.swift */,
 				AACCAE16264FBD28005C9FBC /* main.swift */,
 			);
@@ -237,6 +240,14 @@
 				AACCB04A264FFF3A005C9FBC /* Task.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		AACCB06026512462005C9FBC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AACCB06126512473005C9FBC /* Array+SectionModel.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +399,7 @@
 				AACCB040264FFD37005C9FBC /* TaskService.swift in Sources */,
 				AACCB04B264FFF3A005C9FBC /* Task.swift in Sources */,
 				AACCADDA264FB9C3005C9FBC /* ViewController.swift in Sources */,
+				AACCB06226512473005C9FBC /* Array+SectionModel.swift in Sources */,
 				AACCB02C264FF6C6005C9FBC /* AlertService.swift in Sources */,
 				AACCB01D264FEF96005C9FBC /* UserDefaultsService.swift in Sources */,
 				AACCADD6264FB9C3005C9FBC /* AppDelegate.swift in Sources */,
