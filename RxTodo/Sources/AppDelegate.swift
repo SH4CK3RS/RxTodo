@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
   
     let serviceProvider = ServiceProvider()
+    let reactor = TaskListViewReactor(provider: serviceProvider)
+    
     return true
   }
 

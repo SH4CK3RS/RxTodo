@@ -25,6 +25,13 @@ extension Array where Element: SectionModelType {
     }
   }
   
+  @discardableResult
+  public mutating func remove(at indexPath: IndexPath) -> Element.Item {
+    return self.update(section: indexPath.section) { items in
+      return items.remove(at: indexPath.item)
+    }
+  }
+  
   private mutating func replace(section: Int, items: [Element.Item]) {
     self[section] = Element.init(original: self[section], items: items)
   }
