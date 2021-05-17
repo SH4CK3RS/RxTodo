@@ -13,7 +13,7 @@ class BaseViewController: UIViewController {
     super.init(nibName: nil, bundle: nil)
   }
   
-  required init?(coder: NSCoder) {
+  required convenience init?(coder: NSCoder) {
     self.init()
   }
   
