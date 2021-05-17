@@ -35,7 +35,9 @@ class TaskListViewController: BaseViewController, View {
   }
   
   let dataSource = RxTableViewSectionedReloadDataSource<TaskListSection> { datasource, tableView, indexPath, reactor -> UITableViewCell in
-    let cell = tableView.dequeue(Reusable)
+    let cell = tableView.dequeue(Reusable.taskCell, for: indexPath)
+    cell.reactor = reactor
+    return cell
   }
   
 }
