@@ -93,5 +93,12 @@ class TaskListViewController: BaseViewController, View {
 }
 
 extension TaskListViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    let reactor = self.dataSource[indexPath]
+    return TaskCell.height(fits: tableView.width, reactor: reactor)
+  }
   
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    tableView.deselectRow(at: indexPath, animated: true)
+  }
 }
