@@ -163,4 +163,8 @@ final class TaskListViewReactor: Reactor {
       return nil
     }
   }
+  
+  func reactorForCreatingTask() -> TaskEditViewReactor {
+    return TaskEditViewReactor(provider: self.provider, mode: .new)
+  }
 }

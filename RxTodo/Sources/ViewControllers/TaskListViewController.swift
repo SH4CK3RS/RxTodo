@@ -86,6 +86,17 @@ class TaskListViewController: BaseViewController, View {
       .map(Reactor.Action.moveTask)
       .bind(to: reactor.action)
       .disposed(by: self.disposeBag)
+    
+    addButtonItem.rx.tap
+      .map (reactor.reactorForCreatingTask)
+      .subscribe(onNext: { [weak self] reactor in
+        guard let self = self else { return }
+        let viewController = TaskEditViewController(reactor: reactor)
+        let navigationController = UINavigationController(rootViewController: viewController)
+        self.present(navigationController, animated: true, completion: nil)
+        
+      })
+      .disposed(by: disposeBag)
   }
   
   
