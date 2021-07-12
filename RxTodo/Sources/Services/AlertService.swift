@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import URLNavigator
 
 protocol AlertActionType {
   var title: String? { get }
@@ -45,7 +46,7 @@ final class AlertService: BaseService, AlertServiceType {
         }
         alert.addAction(alertAction)
       }
-      //Todo: Navigator.present(alert)
+      Navigator().present(alert)
       return Disposables.create {
         alert.dismiss(animated: true, completion: nil)
       }

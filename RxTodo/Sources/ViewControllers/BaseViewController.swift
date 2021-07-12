@@ -13,8 +13,8 @@ class BaseViewController: UIViewController {
     super.init(nibName: nil, bundle: nil)
   }
   
-  required convenience init?(coder: NSCoder) {
-    self.init()
+  required init?(coder: NSCoder) {
+    super.init(nibName: nil, bundle: nil)
   }
   
   var disposeBag = DisposeBag()
@@ -23,7 +23,6 @@ class BaseViewController: UIViewController {
   
   override func viewDidLoad() {
     self.view.setNeedsUpdateConstraints()
-    
   }
   
   override func updateViewConstraints() {
@@ -31,6 +30,7 @@ class BaseViewController: UIViewController {
       self.setupConstraints()
       self.didUpdateConstraints = true
     }
+    super.updateViewConstraints()
   }
   
   func setupConstraints() {
