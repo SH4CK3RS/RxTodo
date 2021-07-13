@@ -29,8 +29,6 @@ class TaskListViewController: BaseViewController, View {
     $0.allowsSelectionDuringEditing = true
     $0.register(Reusable.taskCell)
   }
-  
-  
 
   init(reactor: TaskListViewReactor) {
     super.init()
@@ -97,6 +95,24 @@ class TaskListViewController: BaseViewController, View {
         
       })
       .disposed(by: disposeBag)
+    
+    // State
+    reactor.state.asObservable()
+      .map { $0.sections }
+      .bind(to: self.tableView.rx.items(dataSource: dataSource))
+      .disposed(by: disposeBag)
+    
+    reactor.state.asObservable()
+      .map { $0.isEditing }
+      .distinctUntilChanged()
+      .subscribe(onNext: { [weak self] isEditing in
+        guard let self = self else { return }
+        self.navigationItem.leftBarButtonItem?.title = isEditing ? "Done" : "Edit"
+        self.navigationItem.leftBarButtonItem?.style = isEditing ? .done : .plain
+        self.tableView.setEditing(isEditing, animated: true)
+      })
+      .disposed(by: disposeBag)
+    
   }
   
   
